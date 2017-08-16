@@ -1,0 +1,202 @@
+@CHARSET "UTF-8";
+/* 清除默认样式 */
+
+/*字体的unicode：黑体 \9ED1\4F53; 宋体 \5B8B\4F53 ; 楷体 \6977\4F53; 微软雅黑 \5FAE\8F6F\96C5\9ED1*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font: 12px Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, \5FAE\8F6F\96C5\9ED1, \5B8B\4F53, Tahoma, Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size:12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+h2 {
+    font-size: 16px;
+}
+h3 {
+    font-size: 14px;
+}
+
+
+/* 有时不生效，需要再次清除margin和padding */
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+li,
+dt,
+dd {
+    list-style: none;
+}
+
+a {
+	color: #3e3e3e;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+    color: #fb9937;
+}
+a:link, a:visited, a:hover, a:active {
+	text-decoration: none;
+}
+a:hover{
+	color: #fb9937;
+}
+
+
+
+/* IE下点击a标签去掉虚线边框 */
+
+img {
+    vertical-align: top;
+}
+
+input,
+button {
+    outline: none;
+}
+
+/* 浮动 */
+
+.clearfix:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+.fixed-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------------------------------------- */
+@font-face {
+    font-family: "iconfont";
+    src: url('../plugins/iconfont/iconfont.eot'); /* IE9*/
+    src: url('../plugins/iconfont/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../plugins/iconfont/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../plugins/iconfont/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../plugins/iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size: 14px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.form-control {
+    height: 32px;
+    padding: 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+.form-control:focus {
+    border-color: #fc7f01;
+}
+.input-md {
+    width: 384px;
+}
+.btn-i {
+    height: 34px;
+    background-color: #fc7f01;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+.btn-i:hover {
+    background-color: #fb9937;
+}
+
+
+
+/* 上传文件 */
+.picker {
+	margin-right: 10px;
+    height: 30px;
+}
+.webuploader-container .webuploader-pick {
+	background-color: #fc7f01;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    padding: 8px 15px;
+    height: 30px;
+    line-height: 14px;
+}
+.webuploader-container .webuploader-pick-hover {
+    background-color: #fb9937;
+}
+.webuploader-pick .iconfont {
+	margin-right: 3px;
+}
+/* 文件上传、下载 */
+.info .iconfont {
+    display: none;
+    font-size: 16px;
+    color: #fc7f01;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.info .iconfont:hover {
+	color: #fb9937;
+}
+
+
+
+/* 选项卡 */
+.tab-content {
+	position: relative;
+}
+.tab-content-list {
+	opacity: 0;
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+.tab-content-list.active {
+	opacity: 1;
+	display: block;
+}

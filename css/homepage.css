@@ -1,0 +1,140 @@
+/*
+* @Author: jinhaiyue
+* @Date:   2017-08-16 21:26:07
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-08-16 23:50:40
+*/
+@CHARSET "UTF-8";
+.container > header {	
+    background-color: #f4f4f4;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pls-login {
+	color:#0066CC;
+	margin-right: 10px;
+}
+
+/* 内容区 */
+.content-wrapper {
+	background-color: #fff;
+}
+.content-wrapper > header {
+	padding: 20px 0;
+}
+.content-wrapper > header > h1 {	
+	width: 187px;
+	height: 70px;
+	background: url(../images/logo.jpg) no-repeat;
+	background-size: 100%; 
+	text-indent: -999em;
+}
+.search {
+	margin-left: 90px;
+	padding: 18px 0;
+}
+.location {
+	margin-right: 50px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+.location .iconfont {
+	color: #fc7f01;
+}
+.location:hover .iconfont{
+	color: #fb9937;
+}
+.b-search {
+    position: relative;
+    left: -3px;
+}
+.present-info {
+	padding: 11px 0;
+}
+.present-info p {
+	line-height: 24px;
+}
+.present-info p > span {
+	color: #fc7f01;
+}
+
+/* 导航 */
+.content-wrapper > nav {
+	border-bottom: 3px solid #fc7f01;
+	background-color: #f4f4f4;
+}
+.nav-wrapper {
+	height: 40px;
+}
+.nav-wrapper > li {
+	float: left;
+	width: 100px;
+	height: 100%;
+	font-size: 16px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.nav-wrapper > li.active,
+.nav-wrapper > li:hover {
+	background-color: #fc7f01;
+	color: #fff;
+}
+
+/* 正式内容区 */
+.content {
+	width: 1200px;
+	margin: 10px auto 10px;
+}
+.cars-info-left {
+	width: 218px;
+	padding: 10px;
+	border: 1px solid #e6e6e6;
+	background-color: #f9f9f9;
+}
+.cars-info-left > li {
+	min-height: 100px;
+	padding: 10px 0;
+	border-bottom: 1px solid #e6e6e6;
+}
+.cars-info-left > li:last-child {
+	border-bottom: none;
+}
+.cars-info-left .iconfont {
+	font-size: 24px;
+	color: #c3c3c3;
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+}
+.cars-info-left .icon {
+	font-size: 20px;
+	top: 2px;
+}
+.cars-info {
+	padding: 5px 20px 0 30px;
+}
+.cars-info > a {
+	display: inline-block;
+	color: #a0a0a0;
+	margin: 5px 5px 5px 0;
+}
+.cars-info > a:hover {
+	color: #fc7f01;
+	text-decoration: underline;
+}
+
+/* 中间的轮播图 */
+.cars-info-center {
+	width: 700px;
+	height: 505px;
+	margin: 0 10px;
+	background-color: #e5e5e5;
+}
+
+/* 右侧推荐 */
+.cars-info-right {
+	width: 240px;
+	height: 505px;
+	background: #ccc;
+}

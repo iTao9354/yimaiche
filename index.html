@@ -15,39 +15,31 @@
     </head>
     <body>
 		<div class="container">
+			<img src="images/timg-(1).jpg" alt="">
 			<header>
 				<div class="fixed-width clearfix">				
 					<div class="fl">
 						欢迎来到易迈车！
-						<a href="javascript:;" class="pls-login">[请登录]</a>
-						新用户？
-						<a href="javascript:;" class="pls-login">[请注册]</a>
+						<div class="location">
+							<i class="iconfont">&#xe604;</i>
+							全国
+						</div>
 					</div>
 					<div class="fr">客服热线：
 						<span>15100000000</span>
 					</div>
+					<span class="fr myInfo">我的易迈车</span>
+					<div class="fr">
+						<a href="javascript:;" class="pls-login">登录</a>/
+						<a href="javascript:;" class="pls-login">注册</a>
+					</div>
 				</div>
 			</header>
-			<div class="content-wrapper">
-				<header class="fixed-width clearfix">
+			<nav>
+				<img src="images/smy_ch_dhbg.jpg" alt="">
+				<div class="fixed-width">			
 					<h1 class="fl">易迈车</h1>
-					<div class="fl clearfix search">
-						<div class="fl location">
-							<i class="iconfont">&#xe604;</i>
-							全国
-						</div>
-						<div class="fl search-wrap">
-							<input type="text" class="form-control input-md" placeholder="请输入关键词，如宝马">
-							<button class="btn-i b-search">搜 索</button>
-						</div>
-					</div>
-					<div class="fr present-info">
-						<p>目前有 <span>254</span> 辆二手车供您选择</p>
-						<p>今天新增 <span>10</span> 辆</p>
-					</div>
-				</header>
-				<nav>
-					<ul class="fixed-width nav-wrapper clearfix">
+					<ul class="nav-wrapper clearfix">
 						<li class="active">首 页</li>
 						<li>买车</li>
 						<li>卖车</li>
@@ -56,8 +48,10 @@
 						<li>商家</li>
 						<li>联系</li>
 					</ul>
-				</nav>
-				<div class="content clearfix">
+				</div>
+			</nav>
+			<div class="content-wrapper fixed-width">
+				<div class="content-header clearfix">
 					<ul class="fl cars-info-left">
 						<li>
 							<h3>
@@ -128,14 +122,60 @@
 							</div>	
 						</li>
 					</ul>
+
 					<div class="fl cars-info-center">
-						
+						广告区
 					</div>
-					<div class="fr cars-info-right"></div>
+
+					<div class="fr cars-info-right">
+						<div>
+							<button class="btn-i">我要买车</button>
+							<button class="btn-i">我要卖车</button>
+						</div>
+						<div class="block-sm recommend">
+							<h4>推荐车源
+								<i class="iconfont fr icon">&#xe636;</i>
+								<i class="iconfont fr icon">&#xe636;</i>
+							</h4>
+						</div>
+						<div class="block-sm notice">
+							公告栏
+						</div>
+					</div>
+
+					<div class="search-wrap">
+						<input type="text" class="form-control input-md" placeholder="请输入关键词，如宝马">
+						<button class="btn-i b-search">搜 索</button>
+					</div>
+					<div class="fr present-info">
+						<p>目前有 <span>254</span> 辆二手车供您选择</p>
+						<p>今天新增 <span>10</span> 辆</p>
+					</div>
+				</div>
+				<div class="content">
+					<div>
+						推荐车商
+					</div>
+					<div>
+						商家推荐二手车
+					</div>
+					<div>
+						个人推荐二手车
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<script src="plugins/jquery-1.10.2.js"></script>
+		<script>
+			$(function() {
+				calcImgWrapH();
+			})
+			function calcImgWrapH() {
+				// 背景图片的实际高度
+				var bdImgH = Math.floor($('body').width()*900/2560);
+				$('.content-header').css('height',bdImgH);
+			}
+		</script>
     </body>
 </html>

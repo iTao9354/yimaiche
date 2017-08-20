@@ -16,6 +16,7 @@ body {
     color: #333;
     font-size:12px;
     overflow-x: hidden; 
+    background-color: #f5f5f5;
 }
 
 h1,
@@ -29,9 +30,12 @@ h6 {
     font-weight: normal;
 }
 h2 {
-    font-size: 16px;
+    font-size: 18px;
 }
 h3 {
+    font-size: 16px;
+}
+h4 {
     font-size: 14px;
 }
 
@@ -129,14 +133,13 @@ button {
 .form-control {
     height: 32px;
     padding: 0 5px;
-    border: 1px solid #ccc;
-    border-right: none;
+    border: none;
 }
 .form-control:focus {
     border-color: #fc7f01;
 }
 .input-md {
-    width: 384px;
+    width: 200px;
 }
 .btn-i {
     height: 34px;

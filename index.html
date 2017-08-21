@@ -17,18 +17,56 @@
 		<div class="container">
 			<header>
 				<div class="fixed-width clearfix">				
-					<div class="fl">
+					<div class="fl header-list">
 						欢迎来到易迈车！
-						<div class="location">
+						<div class="location" id="location">
 							<i class="iconfont">&#xe604;</i>
-							全国
+							<span class="cur-city">全国</span>
+							<span class="line"></span>
+							<ul class="location-list clearfix">
+								<li><a href="javascript:;" class="selected">全国</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+								<li><a href="javascript:;">北京</a></li>
+							</ul>
 						</div>
 					</div>
-					<div class="fr">客服热线：
+					<div class="fr header-list">客服热线：
 						<span>15100000000</span>
 					</div>
-					<span class="fr myInfo">我的易迈车</span>
-					<div class="fr">
+					<span class="fr header-list myInfo">我的易迈车</span>
+					<div class="fr header-list">
 						<a href="javascript:;" class="pls-login">登录</a>/
 						<a href="javascript:;" class="pls-login">注册</a>
 					</div>
@@ -108,7 +146,22 @@
 					</ul>
 
 					<div class="fl cars-info-center">
-						<img src="images/audi.jpg" alt="">
+						<ul class="carousel-wrap">
+							<li style="opacity:1;"><img src="images/audi.jpg" alt=""></li>
+							<li><img src="images/audi2.jpg" alt=""></li>
+							<li><img src="images/3.jpg" alt=""></li>
+						</ul>
+						<ol class="carousel-btn">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+						</ol>
+						<button class="center-btn prev-btn" onclick="prev();">
+							<i class="iconfont">&#xe6db;</i>
+						</button>
+						<button class="center-btn next-btn" onclick="next();">
+							<i class="iconfont">&#xe611;</i>
+						</button>						
 					</div>
 
 					<div class="fr cars-info-right">
@@ -116,9 +169,16 @@
 							<button class="btn-i"><i class="iconfont">&#xe662;</i>我要买车</button>
 							<button class="btn-i"><i class="iconfont">&#xe663;</i>我要卖车</button>
 						</div>
-						<div class="block-sm present-info">
-							<p>目前有 <span>254</span> 辆二手车供您选择</p>
-							<p>今天新增 <span>10</span> 辆</p>
+						<div class="block-sm present-info clearfix">
+							<div class="fl img img-wrap">
+								<div class="img">
+									<div class="img"></div>
+								</div>
+							</div>
+							<div class="fl">
+								<p>目前有 <span>254</span> 辆二手车供您选择</p>
+								<p>今天新增 <span>10</span> 辆</p>
+							</div>							
 						</div>
 						<div class="block-sm recommend">
 							<h4>推荐车源								
@@ -430,16 +490,6 @@
 									</figcaption>
 								</figure>								
 							</div>
-							<div class="module-recommand link-recommand">
-								<h2>
-									<span>友情链接</span>
-									<div class="friend-link">
-										<a href="javascript:;">二手车之家</a>
-										<a href="javascript:;">淘车网</a>
-										<a href="javascript:;">58同城二手车</a>
-									</div>
-								</h2>						
-							</div>
 						</div>						
 					</div>
 				</div>
@@ -454,25 +504,17 @@
 					<a href="javascript:;">商家</a>
 					<a href="javascript:;">联系</a>
 				</p>
+				<p>
+					<a href="javascript:;">二手车之家</a>
+					<a href="javascript:;">淘车网</a>
+					<a href="javascript:;">58同城二手车</a>
+				</p>
 				<p>Copyright 2017 北京易迈车公司 版权所有. 粤ICP备17080354号-1</p>
 				<p>电话：15100000000 地址：深圳市龙华区民治街道民治大道嘉熙业广场749-755</p>
-
-				<!-- <div class="img">
-					<div class="img"></div>
-				</div> -->
 			</footer>
 		</div>
 
 		<script src="plugins/jquery-1.10.2.js"></script>
-		<script>
-			$(function() {
-				// calcImgWrapH();
-			})
-			function calcImgWrapH() {
-				// 背景图片的实际高度
-				var bdImgH = Math.floor($('body').width()*900/2560);
-				$('.content-header').css('height',bdImgH+2);
-			}
-		</script>
+		<script src="js/homepage.js"></script>
     </body>
 </html>

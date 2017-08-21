@@ -84,6 +84,7 @@ img {
 input,
 button {
     outline: none;
+    border: none;
 }
 
 /* 浮动 */
